@@ -18,9 +18,9 @@ class Player():
         > Each character created will be an instance of the player class thus acquiring the attributes specified in the Player class
           definition
 
-    Method:
+    Methods:
 
-        > __str__: Returns a human readable string representation of an object. Without this attribute calling the object will return the
+        > __str__: Returns a human-readable string representation of an object. Without this attribute calling the object will return the
           the class and object id in hexadecimal format which is not useful.
         > select_attack: Enables the user to select which attack, an attribute of the object, they wish to fight with.
         > update_health: After a round has concluded this method calculates the new health of the fighters after opponent attack damage
