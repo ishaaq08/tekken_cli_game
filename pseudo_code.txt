@@ -1,0 +1,82 @@
+############################################
+class Player
+    SET class attributes
+        name
+        health
+        moves
+
+    FUNCTION select_attack(self, opponent)
+        SET all_moves
+        SET all_damage
+
+        selected_attack = PROMPT_LIST_SELECTION(all_moves)
+        DISPLAY "Player attacks opponent with" moves
+        DISPLAY "Opponent incurs damage of" all_damage
+
+        RETURN move_damage
+
+    FUNCTION update_health(self, damage_taken)
+        SET self.health to self.health minus damage_taken
+        DISPLAY "Player 1 has a health of ..."
+        DISPLAY "Player 2 has a health of ..."
+
+###############################################
+Function select_player()
+
+    SET questions to 
+
+Function initialize_players()
+
+    SET player_n to Player(player_name_n, moves dictionary)
+
+    SET players_dict to {
+        player_name_n: player_n,
+    }
+
+    DISPLAY "Select a player"
+
+    selected_player_name = PROMPT_LIST_SELECTION(player_names)
+
+    RETURN players_dict
+
+################################################
+Function initialize_players()
+    SET player_n to CREATE Player(player_name, health, moves)
+    SET players_dict to {player_n_name: player_n}
+
+    RETURN players_dict
+
+#################################################
+Function fight()
+
+    SET players_dict to CALL initialize_players()
+    user_1 = CALL select_player("Player 1", players_dict)
+    user_2 = CALL select_player("Player_2", players_dict)
+
+    OUTPUT "Player 1 vs Player 2"
+    SET round to 1
+
+    WHILE user_1.health is greater than 0 and user_2.health is greater than 0
+        OUTPUT "Round" round
+        OUTPUT "Player 1 get ready to fight"
+
+        SET damage_to_user_2 to user_1.select_attack(user_2)
+        SET damage_to_user_1 to user_2.select_attack(user_1)
+
+    IF user_1.health > user_2 health 
+        Do OUTPUT "Player 1 wins"
+    ELSE
+        Do OUTPUT "Player 2 wins"
+
+    SET restart to None
+    WHILE restart is True
+        SET restart to READ "Do you want to play again Y or N: "
+        IF Y THEN
+            CALL fight()
+        ELSE IF
+            OUTPUT "Thank you for playing"
+        ELSE 
+            SET restart to None
+        END IF
+
+CALL fight()
