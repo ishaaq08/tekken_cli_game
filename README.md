@@ -11,10 +11,7 @@ win the TEKKEN tournament.
 To utilise this program fork and pull this repo to your local machine. 
 
 ### Library installations
-`pip install inquirer`
-`pip install colored`
-`pip install time`
-`pip install math`
+`pip install inquirer, colored, time, math`
 
 ## Future Steps
 Below are possible future steps to enhance the functionality of the application aswell as the user experience:
