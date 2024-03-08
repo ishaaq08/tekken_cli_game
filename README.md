@@ -4,7 +4,7 @@
 The following repo contains the Python script and pseudocode for the program. 
 
 ## About TEKKEN CLI Game
-TEKKEN CLI Game brings classic TEKKEN action game to your CLI. In this 2 player action game, the each player can select out of 4 characters and must fight to the death to
+TEKKEN CLI Game brings the classic TEKKEN action game to your CLI. In this 2 player action game, each player can select 1 of 4 characters and must fight to the death to
 win the TEKKEN tournament.
 
 ## Prerequisites
