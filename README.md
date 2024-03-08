@@ -11,7 +11,11 @@ win the TEKKEN tournament.
 To utilise this program fork and pull this repo to your local machine. 
 
 ### Library installations
+Once installed on your local machine the user must install the following libraries using pip:
 `pip install inquirer, colored, time, math`
+
+## Challenges
+A clean and entertaining GUI was of significant focus to this project. Since it is very complex to generate the visuals for a fighting game such as TEKKEN, the game was hosted on the command line. To enhance the experience of the GUI different colours were utilised and interactivity was enabled. However, features such as blinking text for the health update were not possible. After significant research it was found that many terminals do not support blinking text. Moreover, having character symbols of 'POW' and 'OUCH' was also desired however this was extremely challenging and very timely. Due to the tight deadline of the project, more time could not have been allocated to this feature.
 
 ## Future Steps
 Below are possible future steps to enhance the functionality of the application aswell as the user experience:
